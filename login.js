@@ -12,7 +12,9 @@ let scrape = async () => {
 	await page.keyboard.type('validate1', {delay: 10});
 	
 	const mous = page.mouse;
-	await mous.click(640, 124);
+	await mous.click(676, 230);
+	await page.waitForNavigation('load');
+	await mous.click(676, 230);
 	await page.waitForNavigation('load');
 	
 	console.log(await browser.version());
