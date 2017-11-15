@@ -38,7 +38,6 @@ let collectData = async () => {
 		console.log('Issue Logging in');
 	};	
 	
- 
 	var report = await lighthouse (currentPage, settings, null);
 	console.log(report);
 
