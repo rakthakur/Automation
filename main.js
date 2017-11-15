@@ -36,6 +36,8 @@ let collectData = async () => {
 	if(currentPage.indexOf('sign-on') != -1 )
 	{
 		console.log('Issue Logging in');
+		browser.close();
+		return {}
 	};	
 	
 	var report = await lighthouse (currentPage, settings, null);
