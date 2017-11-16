@@ -1,0 +1,20 @@
+#!/bin/bash
+domain="healthy.kaiserpermanente.org"
+
+mailto="houseofthakur@gmail.com"
+useragent="Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Chrome/60.0.3112.113 Safari/537.36"
+
+report_date="$(date +'%A, %b %d, %Y - %H:%M %p')"
+
+
+
+
+while read line; do
+ urlsFile='echo '$line' | sed 's/!.*//' | sed 's#.*/##''
+ report_title= " LightHouse report for the - $domain - $report_date" 
+ cd kp/reports/nov15
+ lighthouse $line --port 37059 --quiet --chrome-flags="--headless" --disable-network-throttling --disable-cpu-throttling --disable-device-emulation --output json --output html --save-assets
+
+done < kp/URLs.txt
+
+
