@@ -6,15 +6,16 @@ useragent="Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Chrome/60
 
 report_date="$(date +'%A, %b %d, %Y - %H:%M %p')"
 
-node ./main.js
+now=$(date +"%m_%d_%Y");
+mkdir -p ./reports/$now &&
 
 
 while read line; do
  urlsFile='echo '$line' | sed 's/!.*//' | sed 's#.*/##''
- report_title= " LightHouse report for the - $domain - $report_date" 
- cd kp/reports/nov15
- lighthouse $line --port 37059 --quiet --chrome-flags="--headless" --disable-network-throttling --disable-cpu-throttling --disable-device-emulation --output json --output html --save-assets
+ report_title= " LightHouse report for the - $domain - $report_date";
+ cd ./reports/$now
+ lighthouse $line --port 9222 --quiet --chrome-flags="--headless" --disable-network-throttling --disable-cpu-throttling --disable-device-emulation --output json --output html --save-assets
 
-done < kp/URLs.txt
+done < ./config/URLs.txt
 
 

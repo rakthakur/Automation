@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-const puppeteerLighthouse = require('puppeteer-lighthouse');
+//const puppeteerLighthouse = require('puppeteer-lighthouse');
 const config = require('config');
 const lighthouse = require('lighthouse');
 const settings = require('./config/settings');
@@ -16,7 +16,7 @@ let collectData = async () => {
 	
 	console.log(await browser.version());
 	
-	await page.goto('https://healthy.kaiserpermanente.org/', {waitUntil: 'networkidle'});
+	await page.goto('https://healthy.kaiserpermanente.org/', {waitUntil: 'networkidle2'});
 	//check for successful login
 	
 	await page.focus('#userid');
@@ -36,15 +36,15 @@ let collectData = async () => {
 	if(currentPage.indexOf('sign-on') != -1 )
 	{
 		console.log('Issue Logging in');
-		browser.close();
+		//browser.close();
 		return {}
 	};	
 	
-	var report = await lighthouse (currentPage, settings, null);
-	console.log(report);
+	//var report = await lighthouse (currentPage, settings, null);
+	//console.log(report);
 
 	
-    browser.close();
+    //browser.close();
     return {}
 };
 
