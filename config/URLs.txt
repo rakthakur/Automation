@@ -1,7 +1,4 @@
 https://healthy.kaiserpermanente.org/maryland-virginia-washington-dc/secure/my-health
-
-URL 
-https://healthy.kaiserpermanente.org/maryland-virginia-washington-dc/secure/my-health
 https://healthy.kaiserpermanente.org/maryland-virginia-washington-dc/secure/messages
 https://healthy.kaiserpermanente.org/health/mycare/consumer/my-health-manager/my-medical-record/health-care-reminders
 https://healthy.kaiserpermanente.org/health/mycare/consumer/my-health-manager/my-medical-record/letters/
@@ -177,6 +174,3 @@ https://healthy.kaiserpermanente.org/health/mycare/!ut/p/a0/FchLDsIgEADQs_QAk6G2
 https://healthy.kaiserpermanente.org/health/mycare/!ut/p/a0/04_Sj9CPykssy0xPLMnMz0vMAfIjk1PzSlKLrHJTc5NSi3RTMouT80vzSor1w_Wj9KMKihLTcxP1I_PydZMTkzNSQWJ5-SmpmSn6keEBAVZWPkGOpqGuZub--gW5uRbljoqKAMw48os!/
 https://healthy.kaiserpermanente.org/health/mycare/!ut/p/a0/DccxDoAgDAXQE5G_u3kKpVutDTaxhQB6fn3bA2EHBb9WeFoNvv9n0ZjaF1c_tKfThtQn5sAGArXOxRk5ahKWS9Hc1w_gndiG/
 https://healthy.kaiserpermanente.org/health/mycare/!ut/p/a0/DccxDoAgDAXQE5Hubp5C6VabHyShhRTC-fVtj5huYpddi6zaXdr_rPCFOKQtlJBksAeRJmJXxaSLmHiEFBPK3pOKvqBhdn4E0tG7/
-
-
-
