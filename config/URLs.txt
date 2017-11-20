@@ -1,1 +1,4 @@
 https://healthy.kaiserpermanente.org/maryland-virginia-washington-dc/secure/my-health
+https://healthy.kaiserpermanente.org/health/mycare/consumer/my-health-manager/my-medical-record/allergies
+https://healthy.kaiserpermanente.org/maryland-virginia-washington-dc/secure/messages
+https://healthy.kaiserpermanente.org/maryland-virginia-washington-dc/secure/appointments

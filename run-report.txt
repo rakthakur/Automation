@@ -9,6 +9,9 @@ report_date="$(date +'%A, %b %d, %Y - %H:%M %p')"
 now=$(date +"%m_%d_%Y");
 mkdir -p ./reports/$now &&
 
+node main.js login
+
+sleep 20s
 
 while read line; do
  urlsFile='echo '$line' | sed 's/!.*//' | sed 's#.*/##''
