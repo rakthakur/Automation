@@ -14,9 +14,11 @@ let collectData = async () => {
 
 	const browser = await puppeteer.launch(settings);
     const page = await browser.newPage();
+	// Store the endpoint to be able to reconnect to Chromium
+	const browserWSEndpoint = browser.wsEndpoint();
 	
 	console.log(await browser.version());
-	console.log(await browser.wsEndpoint());
+	console.log(browserWSEndpoint);
 	
 	await page.goto('https://healthy.kaiserpermanente.org/', {waitUntil: 'networkidle2'});
 	//check for successful login
@@ -42,12 +44,9 @@ let collectData = async () => {
 		return {}
 	};	
 	
-	// Store the endpoint to be able to reconnect to Chromium
-	const browserWSEndpoint = browser.wsEndpoint();
 	// Disconnect puppeteer from Chromium
 	browser.disconnect();
 
-	
 	return {}
 	
 	
