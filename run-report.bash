@@ -18,7 +18,7 @@ cd ./reports/$reportdate
 for url in "${urlList[@]}"
 do
 name="$(echo ${url} | sed 's/!.*//' | sed 's#.*/##')"
-lighthouse ${url} --port 9222 --disable-network-throttling --disable-cpu-throttling --disable-device-emulation --output json --output html --output-path=./${name}.json --save-assets
+lighthouse ${url} --port 9222 --quiet --disable-network-throttling --disable-cpu-throttling --disable-device-emulation --output json --output html --output-path=./${name}.json --save-assets
 done
 
 pkill -f puppeteer

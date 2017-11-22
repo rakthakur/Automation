@@ -1,5 +1,5 @@
 module.exports = {
-    headless: false,
+    headless: true,
 	disableDeviceEmulation: true,
 	output: 'html',
 	
