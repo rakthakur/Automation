@@ -11,8 +11,8 @@ sleep 20s
 
 readarray urlList < config/URLs.txt
 
-mkdir -p ./reports/$reportdate
-cd ./reports/$reportdate
+mkdir -p ./reports/$reportdate/desktop
+cd ./reports/$reportdate/desktop
 
 
 for url in "${urlList[@]}"
