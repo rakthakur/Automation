@@ -7,9 +7,9 @@ const settings = require('./config/settings');
 //const log = require('lighthouse-logger');
 //const flags = {logLevel: 'error', output: 'json'};
 
-var uname = config.get('SiteLogin.Username');
-var pwd = config.get('SiteLogin.Password');
-var loginUrl = config.get('SiteLogin.URL');
+var uname = config.get('MobileSiteLogin.Username');
+var pwd = config.get('MobileSiteLogin.Password');
+var loginUrl = config.get('MobileSiteLogin.URL');
 
 let collectData = async () => {
 
@@ -31,7 +31,7 @@ let collectData = async () => {
 	await page.keyboard.type(pwd, {delay: 10});
 	
 	const mouse = page.mouse;
-	await mouse.click(676, 230);
+	await mouse.click(42, 283);
 	await page.waitForNavigation('load');
 
 	//check for successful login

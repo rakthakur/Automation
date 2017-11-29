@@ -11,6 +11,15 @@ console.log(args);
 
 		child.unref();
 	}
+	
+	else if (args[2] == 'login-mobile') {	
+		const child = spawn('node', ['./login-mobile.js'], {
+		  detached: true,
+		  stdio: 'ignore'
+		});
+
+		child.unref();
+	}	
 
 	else if (args[2] == 'close') {	
 		const child = spawn('node', ['./close.js'], {

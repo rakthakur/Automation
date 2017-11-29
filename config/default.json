@@ -2,6 +2,15 @@
     "SiteLogin":
 	{
 		"Username": "d3eight",
-		"Password": "validate1"
+		"Password": "validate1",
+		"URL":"https://healthy.kaiserpermanente.org/"
+	},
+	
+	"MobileSiteLogin":
+	{
+		"Username": "d3eight",
+		"Password": "validate1",
+		"URL":"https://m.kp.org/mt/healthy.kaiserpermanente.org/sign-on.html"
 	}
+	
 }
