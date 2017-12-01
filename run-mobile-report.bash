@@ -9,7 +9,7 @@ node main.js login-mobile
 
 sleep 20s
 
-readarray urlList < config/URLs.txt
+readarray urlList < config/MobileURLs.txt
 
 mkdir -p ./reports/$reportdate/mobile
 cd ./reports/$reportdate/mobile
@@ -18,7 +18,7 @@ cd ./reports/$reportdate/mobile
 for url in "${urlList[@]}"
 do
 name="$(echo ${url} | sed 's/!.*//' | sed 's#.*/##')"
-lighthouse ${url} --port 9222 --quiet --output json --output html --output-path=./${name}.json --save-assets
+lighthouse ${url} --port 9223 --quiet --output json --output html --output-path=./${name}.json --save-assets
 done
 
 pkill -f puppeteer
